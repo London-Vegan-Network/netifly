@@ -2,10 +2,193 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirect Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Vegan Network</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #2d6a4f, #40916c, #52b788);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.95rem;
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .cat {
+      background: rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      padding: 0.65rem;
+    }
+
+    .cat h2 {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.68rem;
+      font-weight: 600;
+      margin: 0 0 0.45rem;
+      padding-left: 0.4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+
+    @media (max-width: 520px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1.2rem;
+      background: #fff;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #1b4332;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .links a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .links a:active {
+      transform: translateY(0);
+    }
+
+    .join-btn {
+      justify-content: center;
+      color: #2d6a4f !important;
+      font-size: 1.1rem !important;
+      font-weight: 700 !important;
+      padding: 1rem 1.2rem !important;
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 0.4rem;
+    }
+
+    .emoji {
+      font-size: 1.4rem;
+      width: 1.6rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sub {
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: #52796f;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Redirect Hub</h1>
-  <p>This site is for managing URL aliases using Netlify.</p>
+  <div class="container">
+    <h1>London Vegan Network</h1>
+    <p class="subtitle">Join our community on WhatsApp</p>
+    <div class="links">
+      <a href="/JoinLVN" class="join-btn"><span class="emoji">🌱</span> Join London Vegan Network</a>
+
+      <section class="cat"><h2>Chat &amp; Events</h2><div class="grid">
+        <a href="/GeneralChat"><span class="emoji">💬</span> General Chat</a>
+        <a href="/LondonVeganMixer"><span class="emoji">🎤</span><span class="link-text">London Vegan Mixer<span class="sub">Social, live music, karaoke</span></span></a>
+        <a href="/VeSocial"><span class="emoji">💕</span><span class="link-text">Ve Social<span class="sub">Dating &amp; Friending Events</span></span></a>
+        <a href="/VeganPubQuizzers"><span class="emoji">🧐</span> Vegan Pub Quizzers</a>
+        <a href="/RamblingVeganFox"><span class="emoji">🦊</span> Rambling Vegan Fox Events</a>
+        <a href="/FatGayVeganEvents"><span class="emoji">🎉</span> Fat Gay Vegan Events</a>
+      </div></section>
+
+      <section class="cat"><h2>Food &amp; Garden</h2><div class="grid">
+        <a href="/DroolingVegans"><span class="emoji">🤤</span><span class="link-text">Drooling Vegans<span class="sub">All about food &amp; drinks</span></span></a>
+        <a href="/EthiopianRestaurantGroup"><span class="emoji">🇪🇹</span> Ethiopian Restaurant Group</a>
+        <a href="/WFPBSOSfree"><span class="emoji">🥗</span><span class="link-text">WFPB SOS-free<span class="sub">Whole food, plant-based; no sugar, oil, salt</span></span></a>
+        <a href="/VeganAlchemists"><span class="emoji">🧑‍🌾</span><span class="link-text">Vegan Alchemists<span class="sub">Gardening, foraging, crafting</span></span></a>
+      </div></section>
+
+      <section class="cat"><h2>Arts &amp; Games</h2><div class="grid">
+        <a href="/Geekstraveganza"><span class="emoji">🎲</span><span class="link-text">Geekstraveganza<span class="sub">Board games &amp; vegan food</span></span></a>
+        <a href="/DnDnOtherRPGs"><span class="emoji">🐉</span> Dungeons &amp; Dragons &amp; other RPGs</a>
+        <a href="/CultureClub"><span class="emoji">🎭</span><span class="link-text">Culture Club<span class="sub">Cinema, performances, museums</span></span></a>
+        <a href="/PoochesAndPopcorn"><span class="emoji">🍿</span><span class="link-text">Pooches and Popcorn<span class="sub">Dog-friendly movie nights</span></span></a>
+      </div></section>
+
+      <section class="cat"><h2>Music &amp; Nightlife</h2><div class="grid">
+        <a href="/RavesClubNights"><span class="emoji">🪩</span> Raves &amp; Club Nights</a>
+        <a href="/MusicLovers"><span class="emoji">🎵</span><span class="link-text">Music Lovers<span class="sub">Concerts, gigs, festivals</span></span></a>
+        <a href="/MusiciansWanted"><span class="emoji">🎸</span><span class="link-text">Musicians Wanted!<span class="sub">Everyone has a voice</span></span></a>
+        <a href="/VivaVerdeDancing"><span class="emoji">💃</span><span class="link-text">Viva Verde Dance<span class="sub">Social Dancing Club</span></span></a>
+      </div></section>
+
+      <section class="cat"><h2>Outdoors &amp; Wellbeing</h2><div class="grid">
+        <a href="/TravelWalksHikes"><span class="emoji">🗺️</span> Travel, Walks &amp; Hikes</a>
+        <a href="/LondonVeganClimbers"><span class="emoji">🧗</span> London Vegan Climbers</a>
+        <a href="/ThriveTribe"><span class="emoji">🧘</span><span class="link-text">Thrive Tribe<span class="sub">Health, fitness, sport</span></span></a>
+        <a href="/GreenHarmonyDecluttering"><span class="emoji">🌿</span> Green Harmony &amp; Decluttering</a>
+        <a href="/GreatVeganGathering"><span class="emoji">🎪</span> The Great Vegan Gathering</a>
+        <a href="/DoggyPlayDates"><span class="emoji">🐶</span> Doggy Play Dates</a>
+      </div></section>
+
+      <section class="cat"><h2>Activism</h2><div class="grid">
+        <a href="/SanctuariesVolunteering"><span class="emoji">🐄</span> Vegan Sanctuaries Volunteering</a>
+        <a href="/ActivismCampaignsPetitions"><span class="emoji">✊</span> Activism, Campaigns &amp; Petitions</a>
+      </div></section>
+
+      <section class="cat"><h2>Identity</h2><div class="grid">
+        <a href="/LondonQueerVegans"><span class="emoji">🏳️‍🌈</span> London Queer Vegans</a>
+        <a href="/VeganVixens"><span class="emoji">♀️</span><span class="link-text">Vegan Vixens<span class="sub">Feminists &amp; allies</span></span></a>
+        <a href="/LondonNeurodivergentVegans"><span class="emoji">🧠</span> London Neurodivergent Vegans</a>
+        <a href="/LondonTechVegans"><span class="emoji">💻</span> London Tech Vegans</a>
+      </div></section>
+
+      <section class="cat"><h2>Cultures</h2><div class="grid">
+        <a href="/DesiVegans"><span class="emoji">🇮🇳</span><span class="link-text">Desi Vegans<span class="sub">Chai &amp; Chaat</span></span></a>
+        <a href="/NorthAmericanVegansUK"><span class="emoji">🌎</span> North American Vegans in the UK</a>
+        <a href="/ItalianAndFriends"><span class="emoji">🇮🇹</span> Italian(s) and Friends</a>
+        <a href="/SpanglishAndFriends"><span class="emoji">🇪🇸</span> Spanglish &amp; Friends</a>
+      </div></section>
+    </div>
+  </div>
 </body>
 </html>
